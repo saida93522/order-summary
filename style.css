@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 62.5%;
+    line-height: 1.5;
+}
+
+body{
+    font-size: 1.6em;
+    background-color: hsl(225, 100%, 94%);
+}
+main{
+    background: url(images/pattern-background-mobile.svg) no-repeat top/120% 70%;
+}
+.content{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.card-container{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;;
+    width: 23.438rem;
+    max-width: 100%;
+    padding-bottom: 1rem;
+    text-align: center;
+    border-radius: 18px 18px;
+    box-shadow: 0.2rem 0.7rem 2rem rgb(160, 160, 160);
+}
+.summary h4{
+    font-size: 1.2em;
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+    padding-bottom: 1.3rem;
+}
+.summary p{
+    font-size: 0.8em;
+    font-weight: 500;
+    color:rgb(114, 128, 167,0.7);
+    padding-bottom: 1.2rem;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.annual-plan-card{
+    background-color:  hsl(225, 100%, 98%);
+    margin:0 auto;
+    width: 87%;
+    padding: 1rem 0.5rem;
+    border-radius: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex:1;
+}
+.annual-plan-card img {
+    width: 5rem;
+    padding-right:1rem;
+}
+.plan{
+  margin-right: auto;
+  font-size: 0.9em;
+}
+.plan p{
+    font-weight: 700;
+    color:hsl(223, 47%, 23%);
+  }
+  .price{
+      color:rgb(114, 128, 167,0.7);
+  }
+  .btn{
+    cursor: pointer;
+    border: 0;
+  }
+
+.btn_change{
+    text-decoration: none;
+    font-size: 0.8em;
+    color: rgb(56, 41, 224);
+    font-weight: 700;
+   
+}
+
+.btn_change:hover{
+    text-decoration: underline;
+    color: rgb(56, 41, 224,0.7)
+}
+
+
+.img-header{
+    width: 100%;
+    padding-bottom: 1rem;
+    
+}
+
+.img-header img{
+    width: 100%;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 1.5rem;
+}
+
+.payment{
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #fff;
+    padding: 1rem  3.5rem;
+    background-color:rgb(56, 41, 224);
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0rem 0.7rem 0.8rem hsl(245, 75%, 52%,0.6);
+    
+}
+.payment:hover{
+    transition: ease-in 0.2s;
+    background-color:rgb(56, 41, 224,0.7);
+}
+
+.cancel{
+    font-size: 0.8em;
+    margin-top: 0.5rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+    background-color:#fff;
+    color:hsl(222, 7%, 55%);
+}
+
+.cancel:hover{
+    color:hsl(223, 47%, 23%);
+}
+.attribution {
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 5rem;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+
+@media screen and (min-width:600px){
+   
+    .card-container{
+        width: 26.5rem;
+    }
+
+    .annual-plan-card{
+        width: 83%;
+        padding: 1.4rem 1rem;
+    }
+    .payment{
+        font-size: 1.02em;
+        padding: 1.3rem 4rem;
+  
+        
+    }
+
+}
+
+@media screen and (min-width:900px){
+   
+    .card-container{
+        width: 30.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .annual-plan-card{
+        width: 80%;
+    }
+
+    .plan{
+        font-size: 0.9em;
+    }
+}
+
+
+@media screen and (min-width:1440px){
+    .card-container{
+        width: 37.5rem;
+        padding-bottom: 5rem;
+        z-index: 1;
+    }
+
+    .annual-plan-card{
+        width: 70%;
+
+    }
+
+    .plan{
+        font-size: 1em;
+    }
+    .summary p{
+        font-size: 1em;
+        padding-bottom: 1.7rem;
+    }
+
+    .payment{
+        font-size: 1.2em;
+        padding: 1.3rem 7rem;
+    }
+    .cancel{
+        font-size: 1em;
+    }
+    main{
+        background: url(images/pattern-background-desktop.svg) no-repeat center top/140% 55%;
+    }
+
+}
